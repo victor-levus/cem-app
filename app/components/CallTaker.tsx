@@ -7,7 +7,12 @@ const CallTaker = () => {
 		<div className="px-1">
 			<h1 className="mb-5">CallTaker</h1>
 
-			<div className="mb-10">
+			<div className="mb-10 w-full bg-slate-950 py-3 h-20 px-2 rounded-sm focus:outline-none text-l font-bold">
+				Activity:
+				<p className="text-xs mt-3">On Call ....</p>
+			</div>
+
+			<div className="mb-1">
 				<input
 					type="text"
 					className="w-full bg-slate-950 py-3 h-20 px-2 rounded-sm text-center focus:outline-none text-2xl font-bold"
@@ -35,6 +40,21 @@ const CallTaker = () => {
 					</button>
 				</div>
 			</div>
+
+			<div className="flex gap-1 mt-20">
+				<button className="bg-slate-950 w-full py-2 rounded-md text-lg font-bold hover:bg-slate-800">
+					Idle
+				</button>
+				<button className="bg-slate-950 w-full py-2 rounded-md text-lg font-bold hover:bg-slate-800">
+					Mute
+				</button>
+				<button className="bg-slate-950 w-full py-2 rounded-md text-lg font-bold hover:bg-slate-800">
+					HangUp
+				</button>
+			</div>
+			<button className="bg-slate-950 w-full py-2 rounded-md text-lg font-bold hover:bg-slate-800 mt-5">
+				Transfer
+			</button>
 		</div>
 	);
 };
